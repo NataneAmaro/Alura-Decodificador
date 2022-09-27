@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Decodificador </title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="decod.css">
+    <script src="decod.js"> </script>
+</head>
+
+<body class="corfundo">
+    <img src="imagens/Vector.png" alt="Alura" class="imgalura">
+    <Input placeholder="Digite seu texto" type="text" id="textoCriptografia" class="textocrip" />
+
+    <div class="botoes">
+        <button class="botaocriptografar" onclick="criptografar()"> Criptografar </button>
+        <button class="botaodescriptografar" onclick="descriptografar()"> Descriptografar </button>
+    </div>
+
+    <div class="boxbranco">
+        <div id="textoNenhumaMensagem">
+            <img src="imagens/boneco.png" alt="boneco" class="boneco">
+            <p class="textoimagem"> Nenhuma mensagem encontrada </p>
+            <p class="segundotexto"> Digite um texto que voce deseja criptografar ou descriptografar.</p>
+        </div>
+        <Input id="textoCripto" hidden type="text" class="textocripto" readonly/>
+        <button class="botaocopiar" hidden id="copiar" onclick="copiarTexto()"> Copiar </button>
+    </div>
+</body>
+
+</html>
